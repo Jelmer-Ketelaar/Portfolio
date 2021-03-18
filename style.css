@@ -169,12 +169,11 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/banner.jpg") center fixed;
     height: 100vh;
     color: #fff;
-    min-height: 500px;
+    min-height: 50vh;
     background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -475,7 +474,6 @@ section .title::after {
     justify-content: center;
     transition: all 0.3s ease;
     min-height: 35vh;
-    max-height: 35vh;
 }
 
 .projects .carousel .card:hover .box {
