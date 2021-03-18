@@ -170,7 +170,8 @@ section .title::after {
 .home {
     display: flex;
     background: url("images/banner.jpg") center fixed;
-    height: 100vh;
+    height: 1000px;
+    min-height: 300px;
     width: 100%;
     color: #fff;
     background-size: cover;
