@@ -277,6 +277,27 @@ section .title::after {
     background: none;
 }
 
+/* The hire button */
+.hire-me {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.hire-me:hover {
+    background: #bf1234 !important;
+    color: #ffffff !important;
+    border: 2px solid #bf1234 !important;
+}
+
 /* services section styling */
 .services, .projects {
     color: #fff;
@@ -418,11 +439,11 @@ section .title::after {
 }
 
 .skills-content .right .js::before {
-    width: 60%;
+    width: 55%;
 }
 
 .skills-content .right .php::before {
-    width: 65%;
+    width: 70%;
 }
 
 .skills-content .right .mysql::before {
@@ -597,7 +618,7 @@ section .title::after {
     align-items: center;
 }
 
-.right form .button-area button {
+.right form .button-area input {
     color: #fff;
     display: block;
     width: 160px !important;
@@ -748,6 +769,9 @@ footer span a:hover {
 
     .services .serv-content .card {
         width: 100%;
+    }
+    .services {
+        height: 100vh;
     }
 }
 

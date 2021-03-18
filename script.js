@@ -86,3 +86,17 @@ function myFunction() {
         moreText.style.display = "inline";
     }
 }
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "jelmer@ketelaar.me",
+        To: 'jelmerketelaar487@gmail.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "test",
+    })
+        .then(function (message) {
+            alert("mail sent successfully")
+        });
+}

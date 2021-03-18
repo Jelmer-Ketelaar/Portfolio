@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
@@ -43,8 +45,8 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Jelmer Ketelaar</div>
-                <div class="text-3">And I'm a <span class="typing"></span>
-                </div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a class='hire-me' href="#contact">Hire me!</a>
             </div>
         </div>
     </div>
@@ -79,8 +81,8 @@
                 <div class="box">
                     <i class="fas fa-code"></i>
                     <div class="text">Creating Websites</div>
-                    <p>What mean here is that I can create a website for you. Could be a website for you company or just
-                        a portfolio.</p>
+                    <p>What mean here is that I can create a website for you. Could be a website for your company or just
+                        a portfolio. Contact me and we can talk about what you want</p>
                 </div>
             </div>
         </div>
@@ -118,14 +120,14 @@
                 <div class="bars">
                     <div class="info">
                         <span>JavaScript</span>
-                        <span>60%</span>
+                        <span>55%</span>
                     </div>
                     <div class="line js"></div>
                 </div>
                 <div class="bars">
                     <div class="info">
                         <span>PHP</span>
-                        <span>65%</span>
+                        <span>70%</span>
                     </div>
                     <div class="line php"></div>
                 </div>
@@ -151,17 +153,16 @@
                     <img src="images/stemwijzer.png" alt="stemwijzer.png">
                     <div class="text">Stemwijzer</div>
                     <p> This is a website that we use in the Netherlands. With this website we can see which political
-                        party
-                        suits you best, by means of 30 statements. </p>
+                        party suits you best, by means of 30 statements. At the end it shows the top 3 of your parties </p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <img src="images/todolist.png" alt="">
                     <div class="text">Todolist</div>
-                    <p>This is a website where you can add a task to a specific list.
+                    <p>This is a website where you can add/edit and delete a task to a specific list.
                         You can see which task is assigned to which list by clicking on the list on the navigation
-                        bar </p>
+                        bar. You can also add/edit and delete a list</p>
                 </div>
             </div>
             <div class="card">
@@ -169,7 +170,7 @@
                     <img src="images/pokebattle.png" alt="">
                     <div class="text">Some project</div>
                     <p>This website is a Pokemon battle. Here you see 2 Pokemons next to eachother. You can see all the
-                        information about the pokemon and also the HP that is left after they got attacked </p>
+                        information about the pokemon and also the HP that's left after they got attacked </p>
                 </div>
             </div>
             <div class="card">
@@ -177,7 +178,7 @@
                     <img src="images/lingo.png" alt="">
                     <div class="text">Lingo</div>
                     <p>This is a Lingo website. Lingo is a word game that is a combination of Mastermind and Bingo. Two
-                        teams of two people compete with each other.</p>
+                        teams of two people compete with each other You just have to guess the word.</p>
                 </div>
             </div>
             <div class="card">
@@ -226,7 +227,7 @@
             </div>
             <div class="column right">
                 <div class="text">Message me</div>
-                <form class="contact-form" action="" method="POST">
+                <form class="contact-form" action="mailto:jelmerketelaar487@gmail.com" method="POST">
                     <div class="fields">
                         <div class="field name">
                             <label>
@@ -239,18 +240,9 @@
                             </label>
                         </div>
                     </div>
-                    <div class="field">
-                        <label>
-                            <input type="text" class="subject" placeholder="Subject">
-                        </label>
-                    </div>
-                    <div class="field textarea">
-                        <label>
-                            <textarea class="message" cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </label>
-                    </div>
+                    
                     <div class="button-area">
-                        <button class="send-msg" type="submit" name="send">Send message</button>
+                        <input class="send-msg" type="submit">
                     </div>
                 </form>
             </div>
