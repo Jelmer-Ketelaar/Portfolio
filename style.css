@@ -10,6 +10,11 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
 }
 
 /* all similar content styling codes */
@@ -169,10 +174,9 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/banner.jpg") center fixed;
+    background: url("images/banner.jpg") center center;
     max-width: 100%;
-    max-height: 1000px;
-    height: 1000px;
+    height: 100%;
     color: #fff;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
