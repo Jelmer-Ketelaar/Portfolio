@@ -352,23 +352,30 @@ section .title::after {
     text-align: justify;
 }
 
-.skills .skills-content .left a {
+.readMore-Button {
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 12px 20px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
+    outline: none;
 }
 
-.skills .skills-content .left a:hover {
+.readMore-Button:hover {
     color: crimson;
     background: none;
+    cursor: pointer;
 }
+
+#more {
+    display: none;
+}
+
 
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
