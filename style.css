@@ -18,7 +18,7 @@ section {
 }
 
 .max-width {
-    max-width: 1300px;
+    max-width: 80vw;
     padding: 0 80px;
     margin: auto;
 }
@@ -124,7 +124,7 @@ section .title::after {
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #fff;
+    color: #dedede;
 }
 
 /* menu btn styling */
@@ -295,6 +295,7 @@ section .title::after {
 }
 
 .services .serv-content .card {
+    margin: auto;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;

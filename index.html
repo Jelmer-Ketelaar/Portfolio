@@ -53,17 +53,17 @@
 <!-- about section start -->
 <section class="about" id="about">
     <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 cla ss="title">About me</h2>
         <div class="about-content">
             <div class="column left">
                 <img src="images/profile-1.jpeg" alt="">
             </div>
             <div class="column right">
                 <div class="text">I'm Jelmer and I'm a <span class="typing-2"></span></div>
-                <p>My name is Jelmer Ketelaar. At the moment I am writing this I am a student at ROC Davinci College.
+                <p>My name is Jelmer Ketelaar. I am from the Netherlands and I am 19 years old. Right now I am a student at ROC Davinci College, Dordrecht.
                     The study I am following is Application and Media Developer.</p>
                 <p>If you would like to see my Curriculum vitae, you can download it via the button below</p>
-                <a href="#">Download CV</a>
+                <a href="Download/CV.pdf"><i class="fa fa-download" style="margin-right: 10px;"></i> Download my CV</a>
             </div>
         </div>
     </div>
@@ -72,27 +72,13 @@
 <!-- services section start -->
 <section class="services" id="services">
     <div class="max-width">
-        <h2 class="title">My services</h2>
+        <h2 class="title">My service</h2>
         <div class="serv-content">
             <div class="card">
                 <div class="box">
                     <i class="fas fa-code"></i>
                     <div class="text">Creating Websites</div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-paint-brush"></i>
-                    <div class="text">Lorum ipsum dolor</div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-chart-line"></i>
-                    <div class="text">Lorem ipsum dolor</div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    <p>What mean here is that I can create a website for you. Could be a website for you company or just a portfolio.</p>
                 </div>
             </div>
         </div>
@@ -161,9 +147,9 @@
         <div class="carousel owl-carousel">
             <div class="card">
                 <div class="box">
-                    <img src="images/profile-1.jpeg" alt="">
-                    <div class="text">Jelmer Ketelaar</div>
-                    <p>Jelmer Ketelaar. Currently studying development.</p>
+                    <img src="images/stemwijzer.png" alt="stemwijzer.png">
+                    <div class="text">Stemwijzer</div>
+                    <p>This is a website we use in the Netherlands </p>
                 </div>
             </div>
             <div class="card">
@@ -205,8 +191,7 @@
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Get in Touch</div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti.
-                    Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                <p>Send me an email if you would like to contact me</p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-user"></i>
@@ -233,20 +218,28 @@
             </div>
             <div class="column right">
                 <div class="text">Message me</div>
-                <form class="contact-form" action="#" method="POST">
+                <form class="contact-form" action="" method="POST">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" class="fullname" placeholder="Name">
+                            <label>
+                                <input type="text" class="fullname" placeholder="Name" required>
+                            </label>
                         </div>
                         <div class="field email">
-                            <input type="text" class="email-input" placeholder="Email">
+                            <label>
+                                <input type="text" class="email-input" placeholder="Email" required>
+                            </label>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" class="subject" placeholder="Subject">
+                        <label>
+                            <input type="text" class="subject" placeholder="Subject">
+                        </label>
                     </div>
                     <div class="field textarea">
-                        <textarea class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                        <label>
+                            <textarea class="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </label>
                     </div>
                     <div class="button-area">
                         <button class="send-msg" type="submit" name="send">Send message</button>
@@ -259,7 +252,7 @@
 
 <!-- footer section start -->
 <footer>
-    <span>Created By Jelmer Ketelaar</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    <span>Created By Jelmer Ketelaar | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
 </footer>
 
 <script src="script.js"></script>
