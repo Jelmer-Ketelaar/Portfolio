@@ -170,9 +170,9 @@ section .title::after {
 .home {
     display: flex;
     background: url("images/banner.jpg") center fixed;
+    max-width: 100%;
+    max-height: 1000px;
     height: 1000px;
-    min-height: 300px;
-    width: 100%;
     color: #fff;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
@@ -470,11 +470,11 @@ section .title::after {
 
 .projects .carousel .card .box {
     display: flex;
+    min-height: 45vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    min-height: 35vh;
 }
 
 .projects .carousel .card:hover .box {
