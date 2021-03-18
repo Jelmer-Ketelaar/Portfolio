@@ -475,6 +475,7 @@ section .title::after {
     justify-content: center;
     transition: all 0.3s ease;
     min-height: 35vh;
+    max-height: 35vh;
 }
 
 .projects .carousel .card:hover .box {
