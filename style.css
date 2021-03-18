@@ -171,8 +171,8 @@ section .title::after {
     display: flex;
     background: url("images/banner.jpg") center fixed;
     height: 100vh;
+    width: 100%;
     color: #fff;
-    min-height: 50vh;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
 }
