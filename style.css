@@ -254,10 +254,10 @@ section .title::after {
 .about .about-content .right .text span {
     color: crimson;
 }
-
 .about .about-content .right p {
     text-align: justify;
 }
+
 
 .about .about-content .right a {
     display: inline-block;
@@ -542,6 +542,7 @@ section .title::after {
 
 .contact .contact-content .left p {
     text-align: justify;
+
 }
 
 .contact .contact-content .left .icons {
@@ -737,6 +738,9 @@ footer span a:hover {
 
     .about .about-content .right {
         flex: 100%;
+    }
+    .about .about-content .right p {
+        text-align: justify;
     }
 
     .services .serv-content .card {
