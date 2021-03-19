@@ -10,11 +10,11 @@
 
 html {
     scroll-behavior: smooth;
-    height: 100%;
+
 }
 
 body {
-    height: 100%;
+
 }
 
 /* Preloader begin */
@@ -348,9 +348,9 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("../images/banner.JPG") center center;
+    background: url("../images/banner.JPG") center fixed;
     max-width: 100%;
-    height: 100%;
+    height: 1000px;
     color: #fff;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
