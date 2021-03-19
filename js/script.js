@@ -1,8 +1,12 @@
+//The ready event occurs when the DOM (document object model) has been loaded.
 $(document).ready(function () {
-    setTimeout(function(){
+    //Preloader
+    setTimeout(function () {
         $('body').addClass('loaded');
-        $('h1').css('color','#222222');
+        $('h1').css('color', '#222222');
     }, 1000);
+
+    //The scroll() method triggers the scroll event, or attaches a function to run when a scroll event occurs.
     $(window).scroll(function () {
         // sticky navbar on scroll script
         if (this.scrollY > 20) {
