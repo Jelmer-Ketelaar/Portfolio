@@ -18,6 +18,13 @@
 
 </head>
 <body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
 <div class="scroll-up-btn">
     <i class="fas fa-angle-up"></i>
 </div>
@@ -77,14 +84,17 @@
 <!-- services section start -->
 <section class="services" id="services">
     <div class="max-width">
-        <h2 class="title">My service</h2>
+        <h2 class="title">My services</h2>
         <div class="serv-content">
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-code"></i>
-                    <div class="text">Creating Websites</div>
-                    <p>I can create a website for you. Could be a website for your company
-                        or just a portfolio. Just tell me what kind of website you want and I will create it fot you</p>
+                    <i class="fas fa-laptop-code"></i>
+                    <div class="text">Front-End</div>
+                    <p>What I can create is a good "Back-End" and "Front-End" website for you. I will do this with the
+                        Back-End languages PHP and MYSQL or with for the Front-End I use languages as: Html, Css,
+                        Javascript and JQuery. This could be a webshop were you have to show the products you would like
+                        to sell. Or just a portfolio. Or something different Tell me what you want and I will fulfill
+                        your dream! </p>
                 </div>
             </div>
         </div>
@@ -102,7 +112,7 @@
                     much I know about the coding language.<span id="dots">...</span>
                     <span id="more">I have more experience in PHP then javascript, because I have studied PHP more than javascript. And I think PHP is a nicer / easier programming language. In my years of programming in my study (4 years) I have learned a lot. My first half year was javascript and the second half was PHP. That is why I have more experience in PHP then Javascript </span>
                 </p>
-                <button class="readMore-Button" onclick="myFunction()" id="myBtn">Read more</button>
+                <button class="readMore-Button" id="myBtn">Read more</button>
             </div>
             <div class="column right">
                 <div class="bars">
@@ -210,7 +220,8 @@
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Get in Touch</div>
-                <p>Send me an email if you would like to contact me</p>
+                <p>Send me an email if you would like to contact me.</p>
+                <p> You can also redirect to my Github or Linkedin page, by clicking on them</p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-user"></i>
@@ -223,30 +234,32 @@
                         <i class="fas fa-envelope"></i>
                         <div class="info">
                             <div class="head">Email</div>
-                            <div class="sub-title">jelmerketelaar487@gmail.com</div>
+                            <div class="sub-title">jelmer@ketelaar.me</div>
                         </div>
                     </div>
-                    <div class="row">
-                        <a href="https://github.com/Jelmer-Ketelaar" target="_blank"><i
-                                class="fab fa-github-square fa-3x"></i></a>
-                        <div class="info">
-                            <div class="head">Github</div>
-                            <div class="sub-title">Jelmer-Ketelaar</div>
+                    <a href="https://github.com/Jelmer-Ketelaar" target="_blank">
+                        <div class="row">
+                            <i class="fab fa-github-square fa-3x"></i>
+                            <div class="info">
+                                <div class="head">Github</div>
+                                <div class="sub-title">Jelmer-Ketelaar</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <a href="https://linkedin.com/in/jelmer-ketelaar-70a783172" target="_blank"><i
-                                class="fab fa-linkedin fa-3x"></i></a>
-                        <div class="info">
-                            <div class="head">Linkedin</div>
-                            <div class="sub-title">Jelmer Ketelaar</div>
+                    </a>
+                    <a href="https://linkedin.com/in/jelmer-ketelaar-70a783172" target="_blank">
+                        <div class="row">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                            <div class="info">
+                                <div class="head">Linkedin</div>
+                                <div class="sub-title">Jelmer Ketelaar</div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="column right">
                 <div class="text">Message me</div>
-                <form class="contact-form" target="_blank" action="mailto:jelmerketelaar487@gmail.com" method="POST">
+                <form class="contact-form" target="_blank" action="mailto:jelmer@ketelaar.me" method="POST">
                     <p>If you would like to contact me press this button below.</p>
                     <p>It will redirect you to your e-mail and automatically fill my Email Address </p>
                     <br>
@@ -258,7 +271,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 
