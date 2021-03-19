@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 1000);
     $(window).scroll(function () {
         // sticky navbar on scroll script
         if (this.scrollY > 20) {
@@ -70,8 +74,9 @@ $(document).ready(function () {
         }
     });
 });
+document.getElementById("myBtn").addEventListener("click", readMore);
 
-function myFunction() {
+function readMore() {
     const dots = document.getElementById("dots");
     const moreText = document.getElementById("more");
     const btnText = document.getElementById("myBtn");
