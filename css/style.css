@@ -348,7 +348,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("../images/banner.JPG") center center fixed;
+    background: url("../images/banner.JPG") center center;
     max-width: 100%;
     height: 100%;
     color: #fff;
