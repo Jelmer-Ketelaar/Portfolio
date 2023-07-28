@@ -533,24 +533,6 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
-.skills .title::after {
-    content: "what I know";
-}
-
-.skills .skills-content .column {
-    width: calc(50% - 30px);
-}
-
-.skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.skills .skills-content .left p {
-    text-align: justify;
-}
 
 .readMore-Button {
     display: inline-block;
@@ -576,56 +558,31 @@ section .title::after {
     display: none;
 }
 
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
+/* skills section styling */
+.skills .title::after {
+    content: "what I know";
 }
 
-.skills .skills-content .right .info {
-    display: flex;
+/* Modify the width percentage based on skill levels */
+.skills .skills-content .right .skill {
+    font-size: 20px;
+    font-weight: 600;
     margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.skills .skills-content .right span {
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align to the right */
+    max-width: 80vw;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.skills .skills-content .right .skill span:last-child {
     font-weight: 500;
     font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
-
-.skills-content .right .html::before {
-    width: 90%;
-}
-
-.skills-content .right .css::before {
-    width: 70%;
-}
-
-.skills-content .right .js::before {
-    width: 55%;
-}
-
-.skills-content .right .php::before {
-    width: 70%;
-}
-
-.skills-content .right .mysql::before {
-    width: 50%;
+    color: crimson;
 }
 
 /* projects section styling */
@@ -996,6 +953,32 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+
+    /* New media query for the skills section */
+    .skills .skills-content .right .bars {
+        height: 20px; /* Reduce the height to save space */
+    }
+
+    .skills .skills-content .right .bars::before {
+        height: 100%; /* Set the height to 100% to fill the reduced height */
+    }
+
+    .skills .skills-content .right .skill {
+        width: 100%; /* Make the skill text take the full width */
+    }
+
+    .skills .skills-content .right .skill span:first-child {
+        min-width: auto; /* Remove the minimum width to adjust based on text length */
+    }
+
+    .about .about-content .left img {
+        width: 100%; /* Set the image width to 100% to fit the container */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+
+    .about .about-content .right .text {
+        margin-top: 30px; /* Add some margin at the top to separate image and text */
     }
 }
 
