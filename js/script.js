@@ -95,3 +95,25 @@ function readMore() {
         moreText.style.display = "inline";
     }
 }
+
+function calculateAge(birthdate) {
+    const today = new Date();
+    const birthDate = new Date(birthdate);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    const dayDiff = today.getDate() - birthDate.getDate();
+
+    // Controleer of de verjaardag dit jaar al is geweest
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age--;
+    }
+    return age;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const birthdate = '2001-05-09';
+    const ageElement = document.querySelector('#age');
+    if (ageElement) {
+        ageElement.textContent = String(calculateAge(birthdate));
+    }
+});
