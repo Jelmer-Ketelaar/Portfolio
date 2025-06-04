@@ -42,15 +42,14 @@ $(document).ready(function () {
     });
 
     // typing text animation script
-    let typed = new Typed(".typing", {
-        strings: ["Developer", "Student"],
+    new Typed(".typing", {
+        strings: ["Developer", "thinker", "tech enthusiast", "learner"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-
-    typed = new Typed(".typing-2", {
-        strings: ["Developer", "Student"],
+    new Typed(".typing-2", {
+        strings: ["Developer", "thinker", "tech enthusiast", "learner"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -103,17 +102,14 @@ function calculateAge(birthdate) {
     const monthDiff = today.getMonth() - birthDate.getMonth();
     const dayDiff = today.getDate() - birthDate.getDate();
 
-    // Controleer of de verjaardag dit jaar al is geweest
     if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
         age--;
     }
     return age;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {
     const birthdate = '2001-05-09';
-    const ageElement = document.querySelector('#age');
-    if (ageElement) {
-        ageElement.textContent = String(calculateAge(birthdate));
-    }
+    const age = calculateAge(birthdate);
+    $('#age').text(age);
 });
