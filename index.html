@@ -1,276 +1,360 @@
 <!DOCTYPE html>
-<!-- Created By Jelmer Ketelaar -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-          content="Jelmer Ketelaar's personal portfolio website, showcasing skills, services, and projects.">
+          content="Portfolio of Jelmer Ketelaar, a software developer from the Netherlands building practical websites and applications.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelmer Ketelaar | Portfolio</title>
+    <meta name="theme-color" content="#101214">
+    <title>Jelmer Ketelaar | Software Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500;700&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="images/portrait.webp" type="image/webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 
 <body>
-<!-- Loader -->
-<div id="loader-wrapper" aria-label="Loading page content">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
-<!-- Scroll-up button -->
-<div class="scroll-up-btn">
-    <i class="fas fa-angle-up" aria-label="Scroll to top"></i>
-</div>
+<button class="scroll-up-btn" type="button" aria-label="Scroll to top">
+    <i class="fas fa-angle-up" aria-hidden="true"></i>
+</button>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="max-width">
-        <div class="logo"><a href="#home">Portfo<span>lio.</span></a></div>
-        <ul class="menu">
-            <li><a href="#home" class="menu-btn">Home</a></li>
-            <li><a href="#about" class="menu-btn">About</a></li>
-            <li><a href="#services" class="menu-btn">Services</a></li>
-            <li><a href="#skills" class="menu-btn">Skills</a></li>
-            <li><a href="#projects" class="menu-btn">Projects</a></li>
-            <li><a href="#contact" class="menu-btn">Contact</a></li>
-        </ul>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
+<header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#home" aria-label="Jelmer Ketelaar home">Jelmer<span>.</span></a>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Open navigation menu</span>
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul class="menu" id="primary-navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
-<!-- Home Section -->
-<section class="home" id="home">
-    <div class="max-width">
-        <div class="row">
+<main id="main-content">
+    <section class="home" id="home" aria-labelledby="home-title">
+        <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Jelmer Ketelaar</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a class="hire-me" href="#contact">Hire me!</a>
-            </div>
-        </div>
-    </div>
-</section>
+                <p class="eyebrow">Software developer based in the Netherlands</p>
+                <h1 id="home-title">Jelmer Ketelaar</h1>
+                <p class="home-subtitle">
+                    I build practical websites and applications with clean interfaces, reliable backend logic, and
+                    maintainable code.
+                </p>
 
-<!-- About Section -->
-<section class="about" id="about">
-    <div class="max-width">
-        <h2 class="title">About me</h2>
-        <div class="about-content">
-            <div class="column left">
-                <img src="images/portrait.webp" alt="Profile picture of Jelmer Ketelaar">
-            </div>
-            <div class="column right">
-                <div class="text">
-                    <h3 style="margin-bottom: 1rem;">Hi, I'm Jelmer — a <span class="typing-2"></span></h3>
-                </div>
-
-                <p>I'm Jelmer Ketelaar, a 24-year-old developer from the Netherlands. I graduated in 2022 from ROC Da Vinci College with a degree in software development.</p>
-
-                <p>I have hands-on experience with technologies such as Java, Python, JavaScript, PHP, and relational databases. I take pride in turning complex challenges into clean, efficient solutions.</p>
-
-                <p>Driven by curiosity and a commitment to growth, I strive to deliver high-quality results while continuously improving my skills and approach.</p>
-
-                <a class="btn-download" download="CV-Jelmer-Ketelaar.pdf" href="Download/CV-Jelmer-Ketelaar.pdf"
-                   aria-label="Download my resume in PDF format">
-                    <i class="fa fa-download" style="margin-right: 10px;"></i>Download my CV
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section class="services" id="services">
-    <div class="max-width">
-        <h2 class="title">My Services</h2>
-        <div class="serv-content">
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-laptop-code"></i>
-                    <div class="text">Website Development</div>
-                    <p>I build websites tailored to your needs, ensuring they work smoothly and provide all the
-                        necessary functionality for your business.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section class="skills" id="skills">
-    <div class="max-width">
-        <h2 class="title">My Skills</h2>
-        <div class="skills-content">
-            <div class="column left">
-                <div class="text">My creative skills & experiences.</div>
-                <p class="p" style="margin-bottom: 2rem;">I have a strong foundation in various programming languages,
-                    allowing me to develop reliable and efficient solutions for different types of projects.</p>
-            </div>
-            <div class="column right">
-                <div class="skills-text">
-                    <div class="skill">
-                        <span>HTML:</span>
-                        <span>Experienced</span>
-                    </div>
-                    <div class="skill">
-                        <span>CSS:</span>
-                        <span>Intermediate</span>
-                    </div>
-                    <div class="skill">
-                        <span>JavaScript:</span>
-                        <span>Intermediate</span>
-                    </div>
-                    <div class="skill">
-                        <span>PHP:</span>
-                        <span>Experienced</span>
-                    </div>
-                    <div class="skill">
-                        <span>MySQL:</span>
-                        <span>Intermediate</span>
-                    </div>
-                    <div class="skill">
-                        <span>Python:</span>
-                        <span>Intermediate</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section class="projects" id="projects">
-    <div class="max-width">
-        <h2 class="title">My Projects</h2>
-        <div class="carousel owl-carousel">
-            <!-- NFTDropCalendar -->
-            <div class="card">
-                <div class="box">
-                    <img src="images/NFTDropCalendar.png" alt="Screenshot of NFTDropCalendar website">
-                    <div class="text">NFTDropCalendar</div>
-                    <a target="_blank" href="https://github.com/Jelmer-Ketelaar/NFTDropCalendar" style="color: white;">NFTDropCalendar.info
-                        provides up-to-date information on the latest NFT drops.</a>
-                </div>
-            </div>
-            <!-- Laravel Portfolio -->
-            <div class="card">
-                <div class="box">
-                    <img src="images/Portfolio.jpg" alt="Homepage of Laravel Portfolio website">
-                    <div class="text">Laravel Portfolio</div>
-                    <a target="_blank" href="https://github.com/Jelmer-Ketelaar/Portfolio-Laravel"
-                       style="color: white;">This portfolio website was created with Laravel and includes a package
-                        ordering feature.</a>
-                </div>
-            </div>
-            <!-- EnergizeSmart -->
-            <div class="card">
-                <div class="box">
-                    <img src="images/energizesmart-logo.png" alt="Logo of EnergizeSmart">
-                    <div class="text">EnergizeSmart</div>
-                    <a target="_blank" href="https://github.com/Jelmer-Ketelaar/EnergizeSmart" style="color: white;">EnergizeSmart
-                        is a platform that helps users monitor their energy consumption and optimize usage.</a>
-                </div>
-            </div>
-            <!-- CryptoSignalHQ -->
-            <div class="card">
-                <div class="box">
-                    <img src="images/cryptosignalhq.png" alt="Logo of CryptoSignalHQ">
-                    <div class="text">CryptoSignalHQ</div>
-                    <a target="_blank" href="https://github.com/Jelmer-Ketelaar/CryptoSignalHQ/tree/develop"
-                       style="color: white;">CryptoSignalHQ provides cryptocurrency trading signals based on market
-                        trends.</a>
-                </div>
-            </div>
-            <!-- PokeBattle -->
-            <div class="card">
-                <div class="box">
-                    <img src="images/pokebattle.png" alt="Homepage of PokeBattle project">
-                    <div class="text">PokeBattle</div>
-                    <a target="_blank" href="https://github.com/Jelmer-Ketelaar/PokeBattle" style="color: white;">PokeBattle
-                        is a game where players can battle and level up their favorite Pokémon characters.</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="max-width">
-        <h2 class="title">Contact me</h2>
-        <div class="contact-content">
-            <div class="column left">
-                <div class="text">Get in Touch</div>
-                <p>Feel free to contact me via email, or visit my Github and LinkedIn profiles below:</p>
-                <div class="icons">
-                    <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                            <div class="head">Name</div>
-                            <div class="sub-title">Jelmer Ketelaar</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info">
-                            <div class="head">Email</div>
-                            <div class="sub-title">jelmer.ketelaar@me.com</div>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Jelmer-Ketelaar" target="_blank" aria-label="Visit my Github">
-                        <div class="row">
-                            <i class="fab fa-github-square fa-3x"></i>
-                            <div class="info">
-                                <div class="head">Github</div>
-                                <div class="sub-title">Jelmer-Ketelaar</div>
-                            </div>
-                        </div>
+                <div class="home-actions" aria-label="Primary actions">
+                    <a class="btn btn-primary" href="#projects">
+                        <i class="fas fa-layer-group" aria-hidden="true"></i>
+                        View projects
                     </a>
-                    <a href="https://linkedin.com/in/jelmer-ketelaar-70a783172" target="_blank">
-                        <div class="row">
-                            <i class="fab fa-linkedin fa-3x"></i>
-                            <div class="info">
-                                <div class="head">LinkedIn</div>
-                                <div class="sub-title">Jelmer Ketelaar</div>
-                            </div>
-                        </div>
+                    <a class="btn btn-secondary" href="#contact">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Contact me
+                    </a>
+                </div>
+
+                <ul class="home-highlights" aria-label="Professional highlights">
+                    <li>
+                        <strong>2022</strong>
+                        <span>Software development graduate</span>
+                    </li>
+                    <li>
+                        <strong>PHP</strong>
+                        <span>Python, JavaScript, and SQL</span>
+                    </li>
+                    <li>
+                        <strong>NL</strong>
+                        <span>Based in the Netherlands</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+        <div class="max-width">
+            <div class="section-heading">
+                <span class="section-kicker">About</span>
+                <h2 id="about-title">A developer who builds practical products end to end.</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-media">
+                    <img src="images/portrait.webp" width="900" height="1200"
+                         alt="Profile picture of Jelmer Ketelaar">
+                </div>
+
+                <div class="about-copy">
+                    <h3>Hi, I'm Jelmer.</h3>
+                    <p>
+                        I'm Jelmer Ketelaar, a <span id="age">25</span>-year-old developer from the Netherlands. I
+                        graduated in 2022 from ROC Da Vinci College with a degree in software development.
+                    </p>
+                    <p>
+                        I work across PHP and Laravel, JavaScript and TypeScript, Python automation, and relational
+                        databases. I like building the full flow: clear interfaces, dependable backend logic, useful
+                        data models, and deployment details that do not get in the way.
+                    </p>
+                    <p>
+                        Recent work includes an event photo album MVP with guest uploads and QR joins, a rental listing
+                        scraper with notifications, and Laravel migrations for older PHP projects. I care about simple
+                        solutions, readable code, and shipping improvements that are easy to maintain.
+                    </p>
+
+                    <div class="about-details" aria-label="About highlights">
+                        <article>
+                            <span>Focus</span>
+                            <strong>Web apps, automation, and practical tooling</strong>
+                        </article>
+                        <article>
+                            <span>Backend</span>
+                            <strong>PHP, Laravel, Python, SQL, APIs</strong>
+                        </article>
+                        <article>
+                            <span>Frontend</span>
+                            <strong>JavaScript, TypeScript, responsive UI</strong>
+                        </article>
+                        <article>
+                            <span>Approach</span>
+                            <strong>Small iterations, clear structure, maintainable code</strong>
+                        </article>
+                    </div>
+
+                    <a class="btn btn-primary" download="CV-Jelmer-Ketelaar.pdf" href="Download/CV-Jelmer-Ketelaar.pdf">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        Download CV
                     </a>
                 </div>
             </div>
-            <div class="column right">
-                <div class="text">Message me</div>
-                <form class="contact-form" action="mailto:jelmer@ketelaar.me" method="POST" enctype="text/plain">
-                    <p>If you would like to contact me, click the button below. It will open your email client with my
-                        email address filled in.</p>
-                    <div class="button-area">
-                        <input class="send-msg" type="submit" value="Send Mail">
-                    </div>
-                </form>
+        </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+        <div class="max-width">
+            <div class="section-heading section-heading-dark">
+                <span class="section-kicker">Services</span>
+                <h2 id="services-title">Focused support for practical web projects.</h2>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    <h3>Website Development</h3>
+                    <p>Responsive websites with clear structure, accessible markup, and polished user interfaces.</p>
+                </article>
+
+                <article class="service-card">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    <h3>Application Development</h3>
+                    <p>Feature work for web applications using practical backend logic and maintainable code patterns.</p>
+                </article>
+
+                <article class="service-card">
+                    <i class="fas fa-tools" aria-hidden="true"></i>
+                    <h3>Maintenance</h3>
+                    <p>Targeted improvements, bug fixes, and cleanup that make existing projects easier to use and extend.</p>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+        <div class="max-width">
+            <div class="section-heading">
+                <span class="section-kicker">Skills</span>
+                <h2 id="skills-title">Core technologies I use to build and improve projects.</h2>
+            </div>
+
+            <div class="skills-content">
+                <div class="skills-intro">
+                    <h3>Balanced across frontend, backend, and data.</h3>
+                    <p>
+                        My strongest work combines simple user flows with dependable implementation details, so the
+                        result feels clear for users and manageable for the people maintaining it.
+                    </p>
+                </div>
+
+                <div class="skill-groups" aria-label="Skill levels">
+                    <article class="skill-group">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li><span>HTML</span><strong>Experienced</strong></li>
+                            <li><span>CSS</span><strong>Intermediate</strong></li>
+                            <li><span>JavaScript</span><strong>Intermediate</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li><span>PHP</span><strong>Experienced</strong></li>
+                            <li><span>Python</span><strong>Intermediate</strong></li>
+                            <li><span>MySQL</span><strong>Intermediate</strong></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="max-width">
+            <div class="section-heading section-heading-dark">
+                <span class="section-kicker">Projects</span>
+                <h2 id="projects-title">Selected work and experiments.</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <a class="project-media project-media-graphic" target="_blank" rel="noopener noreferrer"
+                       href="https://github.com/Jelmer-Ketelaar/event-photo-mvp"
+                       aria-label="Open EventFrame MVP repository">
+                        <span class="project-visual" aria-hidden="true">
+                            <i class="fas fa-camera-retro"></i>
+                            <span>EventFrame</span>
+                        </span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kicker">Event photo MVP</p>
+                        <h3>EventFrame MVP</h3>
+                        <p>Full-stack event photo albums with QR guest joins, uploads, live updates, and organizer controls.</p>
+                        <a class="project-link" target="_blank" rel="noopener noreferrer"
+                           href="https://github.com/Jelmer-Ketelaar/event-photo-mvp">
+                            View repository
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="project-media project-media-graphic" target="_blank" rel="noopener noreferrer"
+                       href="https://github.com/Jelmer-Ketelaar/HuurhuisScraper/tree/development"
+                       aria-label="Open HuurhuisScraper repository">
+                        <span class="project-visual" aria-hidden="true">
+                            <i class="fas fa-home"></i>
+                            <span>HuurhuisScraper</span>
+                        </span>
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kicker">Rental automation</p>
+                        <h3>HuurhuisScraper</h3>
+                        <p>Scrapes rental listings into MySQL and sends WhatsApp alerts when listings match the filters.</p>
+                        <a class="project-link" target="_blank" rel="noopener noreferrer"
+                           href="https://github.com/Jelmer-Ketelaar/HuurhuisScraper/tree/development">
+                            View repository
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="project-media" target="_blank" rel="noopener noreferrer"
+                       href="https://github.com/Jelmer-Ketelaar/NFTDropCalendar/tree/convert-to-laravel"
+                       aria-label="Open NFT Drop Calendar Laravel conversion branch">
+                        <img src="images/NFTDropCalendar.png" width="1916" height="973" loading="lazy"
+                             alt="Screenshot of NFTDropCalendar website">
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kicker">Laravel migration</p>
+                        <h3>NFT Drop Calendar</h3>
+                        <p>Compatibility-first Laravel conversion that keeps legacy URLs working during migration.</p>
+                        <a class="project-link" target="_blank" rel="noopener noreferrer"
+                           href="https://github.com/Jelmer-Ketelaar/NFTDropCalendar/tree/convert-to-laravel">
+                            View repository
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-logo">
+                    <a class="project-media" target="_blank" rel="noopener noreferrer"
+                       href="https://github.com/Jelmer-Ketelaar/EnergizeSmart"
+                       aria-label="Open EnergizeSmart repository">
+                        <img src="images/energizesmart-logo.png" width="1500" height="1500" loading="lazy"
+                             alt="Logo of EnergizeSmart">
+                    </a>
+                    <div class="project-body">
+                        <p class="project-kicker">Energy platform</p>
+                        <h3>EnergizeSmart</h3>
+                        <p>Laravel energy management system for monitoring, analyzing, and optimizing consumption.</p>
+                        <a class="project-link" target="_blank" rel="noopener noreferrer"
+                           href="https://github.com/Jelmer-Ketelaar/EnergizeSmart">
+                            View repository
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="max-width">
+            <div class="section-heading">
+                <span class="section-kicker">Contact</span>
+                <h2 id="contact-title">Have a project or improvement in mind?</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-copy">
+                    <h3>Let's talk about what needs to be built.</h3>
+                    <p>
+                        Send me an email or connect through GitHub and LinkedIn. I am interested in practical web work,
+                        focused improvements, and projects that need clear implementation.
+                    </p>
+                </div>
+
+                <div class="contact-actions" aria-label="Contact options">
+                    <a class="contact-link" href="mailto:jelmer.ketelaar@me.com">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>Email</span>
+                        <strong>jelmer.ketelaar@me.com</strong>
+                    </a>
+
+                    <a class="contact-link" href="https://github.com/Jelmer-Ketelaar" target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                        <strong>Jelmer-Ketelaar</strong>
+                    </a>
+
+                    <a class="contact-link" href="https://linkedin.com/in/jelmer-ketelaar-70a783172" target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                        <strong>Jelmer Ketelaar</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
 <footer>
-            <span>Created By <span class="name">Jelmer Ketelaar</span> | <span class="far fa-copyright"></span> 2025 All
-                rights reserved.</span>
+    <div class="max-width">
+        <p>Created by <span class="name">Jelmer Ketelaar</span> | &copy; <span id="current-year">2026</span> All rights reserved.</p>
+    </div>
 </footer>
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js" defer></script>
 </body>
 
 </html>
